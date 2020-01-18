@@ -81,19 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./home.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./home.js":
-/*!*****************!*\
-  !*** ./home.js ***!
-  \*****************/
+/***/ "./css/all.css":
+/*!*********************!*\
+  !*** ./css/all.css ***!
+  \*********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('home.js')\n\n//# sourceURL=webpack:///./home.js?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./css/all.css?");
+
+/***/ }),
+
+/***/ "./js/index.js":
+/*!*********************!*\
+  !*** ./js/index.js ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_all_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/all.css */ \"./css/all.css\");\n/* harmony import */ var _css_all_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_all_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconsole.log(\"Hello Webpack !\")\nconsole.log(\"edit me, use watch script can keep :D\")\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ })
 
