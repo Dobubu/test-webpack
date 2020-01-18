@@ -97,6 +97,30 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./cs
 
 /***/ }),
 
+/***/ "./img/web.jpeg":
+/*!**********************!*\
+  !*** ./img/web.jpeg ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/web.jpeg\");\n\n//# sourceURL=webpack:///./img/web.jpeg?");
+
+/***/ }),
+
+/***/ "./index.html":
+/*!********************!*\
+  !*** ./index.html ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"index.html\");\n\n//# sourceURL=webpack:///./index.html?");
+
+/***/ }),
+
 /***/ "./js/index.js":
 /*!*********************!*\
   !*** ./js/index.js ***!
@@ -105,7 +129,7 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./cs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_all_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/all.css */ \"./css/all.css\");\n/* harmony import */ var _css_all_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_all_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconsole.log(\"Hello Webpack !\")\nconsole.log(\"edit me, use watch script can keep :D\")\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_all_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/all.css */ \"./css/all.css\");\n/* harmony import */ var _css_all_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_all_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.html */ \"./index.html\");\n/* harmony import */ var _img_web_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/web.jpeg */ \"./img/web.jpeg\");\n\n\n\n\nconsole.log(\"Hello Webpack !\")\nconsole.log(\"edit me, use watch script can keep :D\")\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ })
 

@@ -19,6 +19,17 @@ module.exports = {
         test: /\.css$/,
         use: extractCSS.extract(['css-loader']),
       },
+      {
+        test: /\.(html|png|jpe?g|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]'
+            }
+          },
+        ]
+      }
     ]
   },
   plugins: [
