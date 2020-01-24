@@ -38,7 +38,26 @@ module.exports = {
   },
   plugins: [
     extractCSS
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9001,  // default 8080
+    status: {
+      assets: true,
+      cached: false,
+      chunkModules: false,
+      chunkOrigins: false,
+      chunks: false,
+      colors: true,
+      hash: false,
+      modules: false,
+      reasons: false,
+      source: false,
+      version: false,
+      warnings: false
+    }
+  }
 };
 
 console.log(`[NODE_ENV] ${process.env.NODE_ENV}`)
