@@ -1,4 +1,7 @@
 import '../css/all.css'
+import '../css/home.scss'
+import '../css/about.sass'
+
 import '../index.html'
 import '../img/web.jpeg'
 
