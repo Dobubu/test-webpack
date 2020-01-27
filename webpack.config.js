@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractCSS = new ExtractTextPlugin('css/[name].css')
+const CopyWebpackPlugin = require("copy-webpack-plugin")
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -41,7 +42,10 @@ module.exports = {
     ]
   },
   plugins: [
-    extractCSS
+    extractCSS,
+    new CopyWebpackPlugin([
+      {from: 'assets', to: 'assets'}
+    ])
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -74,4 +78,7 @@ console.log(`[NODE_ENV] ${process.env.NODE_ENV}`)
 
 // babel-loader      : webpack要讀取任何檔案時，都需要靠它判讀再作轉換
 // @babel/core       : 程式調用Babel的API做翻譯
-// @babel/preset-env : 直接使用最新版本的JavaScript去做編譯
+// @babel/preset-env : 直接使用最新版本的JavaScript去做編譯（轉換新的 JavaScript 語法）
+// @babel-polyfill   : 要在編譯你的程式碼之前執行，所以要安裝為 dependency。（轉換新的 API模組）
+
+// CopyWebpackPlugin : 就是專門拿來搬移不會經過loader的plugins
