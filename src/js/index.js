@@ -14,3 +14,5 @@ const foodList = ['apple', 'cake', 'chocolate', 'cookie']
 foodList.forEach((item, i) => {
   console.log(`${i} - ${item}`)
 })
+
+console.log($)

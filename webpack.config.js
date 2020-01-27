@@ -2,6 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractCSS = new ExtractTextPlugin('css/[name].css')
 const CopyWebpackPlugin = require("copy-webpack-plugin")
+const webpack = require("webpack");
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -45,7 +46,12 @@ module.exports = {
     extractCSS,
     new CopyWebpackPlugin([
       {from: 'assets', to: 'assets'}
-    ])
+    ]),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -81,4 +87,5 @@ console.log(`[NODE_ENV] ${process.env.NODE_ENV}`)
 // @babel/preset-env : 直接使用最新版本的JavaScript去做編譯（轉換新的 JavaScript 語法）
 // @babel-polyfill   : 要在編譯你的程式碼之前執行，所以要安裝為 dependency。（轉換新的 API模組）
 
-// CopyWebpackPlugin : 就是專門拿來搬移不會經過loader的plugins
+// copy-webpack-plugin : 就是專門拿來搬移不會經過loader的plugins
+// ProvidePlugin       : 讓每支js裡面不用去import第三方套件就可以在全域取得。（會失去透過模組化js的好處，盡量別使用）
