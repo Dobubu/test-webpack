@@ -1,3 +1,5 @@
+import '@babel/polyfill'
+
 import '../css/all.css'
 import '../css/home.scss'
 import '../css/about.sass'
