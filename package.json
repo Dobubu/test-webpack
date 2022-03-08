@@ -1,5 +1,5 @@
 {
-  "name": "practive-webpack",
+  "name": "test-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dobubu/practive-webpack.git"
+    "url": "git+https://github.com/Dobubu/test-webpack.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dobubu/practive-webpack/issues"
+    "url": "https://github.com/Dobubu/test-webpack/issues"
   },
-  "homepage": "https://github.com/Dobubu/practive-webpack#readme",
+  "homepage": "https://github.com/Dobubu/test-webpack#readme",
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
